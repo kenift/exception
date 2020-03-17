@@ -1,2 +1,2 @@
 # exception
-Exception messages for Kenift projects
+Kenift exception messages for the projcets
