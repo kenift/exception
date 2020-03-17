@@ -1,0 +1,82 @@
+{
+  "name": "@kenift/exception",
+  "version": "1.0.0-rc",
+  "description": "Kenift exception messages for the projects",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenift/exception.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "Kenift",
+    "Exception",
+    "Messages"
+  ],
+  "author": "Paulo Vernetti <sirvernetti@gmail.com> (https://github.com/PauloVernetti)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenift/exception/issues"
+  },
+  "homepage": "https://github.com/kenift/exception#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "log-symbols": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-async-generator-functions": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-proposal-optional-catch-binding": "^7.8.3",
+    "@babel/plugin-proposal-unicode-property-regex": "^7.8.3",
+    "@babel/plugin-transform-arrow-functions": "^7.8.3",
+    "@babel/plugin-transform-async-to-generator": "^7.8.3",
+    "@babel/plugin-transform-block-scoped-functions": "^7.8.3",
+    "@babel/plugin-transform-block-scoping": "^7.8.3",
+    "@babel/plugin-transform-classes": "^7.8.3",
+    "@babel/plugin-transform-computed-properties": "^7.8.3",
+    "@babel/plugin-transform-destructuring": "^7.8.3",
+    "@babel/plugin-transform-dotall-regex": "^7.8.3",
+    "@babel/plugin-transform-duplicate-keys": "^7.8.3",
+    "@babel/plugin-transform-exponentiation-operator": "^7.8.3",
+    "@babel/plugin-transform-for-of": "^7.8.4",
+    "@babel/plugin-transform-function-name": "^7.8.3",
+    "@babel/plugin-transform-instanceof": "^7.8.3",
+    "@babel/plugin-transform-member-expression-literals": "^7.8.3",
+    "@babel/plugin-transform-named-capturing-groups-regex": "^7.8.3",
+    "@babel/plugin-transform-new-target": "^7.8.3",
+    "@babel/plugin-transform-object-super": "^7.8.3",
+    "@babel/plugin-transform-parameters": "^7.8.8",
+    "@babel/plugin-transform-property-literals": "^7.8.3",
+    "@babel/plugin-transform-property-mutators": "^7.8.3",
+    "@babel/plugin-transform-reserved-words": "^7.8.3",
+    "@babel/plugin-transform-shorthand-properties": "^7.8.3",
+    "@babel/plugin-transform-sticky-regex": "^7.8.3",
+    "@babel/plugin-transform-template-literals": "^7.8.3",
+    "@babel/plugin-transform-typeof-symbol": "^7.8.4",
+    "@babel/plugin-transform-unicode-regex": "^7.8.3",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-json": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@rollup/plugin-typescript": "^3.0.0",
+    "@types/node": "^13.9.1",
+    "@types/package-json": "^5.0.1",
+    "jest": "^25.1.0",
+    "rollup": "^1.31.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-babel-minify": "^9.1.1",
+    "rollup-plugin-sourcemaps": "^0.5.0",
+    "rollup-plugin-terser": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "tslib": "^1.11.0",
+    "typescript": "^3.8.2"
+  }
+}

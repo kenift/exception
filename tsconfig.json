@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+      "target": "ES3",
+      "module": "ES2015",
+      "moduleResolution": "node",
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "strictFunctionTypes": true,
+      "strictPropertyInitialization": true,
+      "strictBindCallApply": true,
+      "noImplicitThis": true,
+      "noImplicitReturns": true,
+      "alwaysStrict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "esModuleInterop": true,
+      "removeComments": true,
+      "resolveJsonModule": true,
+      "typeRoots": [ "node_modules/@types" ]
+  }
+}
