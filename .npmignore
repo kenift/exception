@@ -1,0 +1,10 @@
+test/
+src/
+.idea/
+exception.iml
+rollup.config.js
+tsconfig.js
+node_modules/
+.gitignore
+.npmignore
+.releaserc

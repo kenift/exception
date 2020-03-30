@@ -1,12 +1,13 @@
 {
   "name": "@kenift/exception",
-  "version": "1.0.0-rc",
+  "version": "1.0.0",
   "description": "Kenift exception messages for the projects",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
-    "test": "node test/index.js"
+    "test": "node test/index.js",
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -14,14 +15,18 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": [
     "Kenift",
     "Exception",
     "Messages"
   ],
-  "author": "Paulo Vernetti <sirvernetti@gmail.com> (https://github.com/PauloVernetti)",
+  "author": {
+    "name": "Paulo Vernetti",
+    "email": "vernetti@kenift.com",
+    "url": "https://github.com/PauloVernetti"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kenift/exception/issues"
@@ -76,6 +81,10 @@
     "rollup-plugin-sourcemaps": "^0.5.0",
     "rollup-plugin-terser": "^5.2.0",
     "rollup-plugin-typescript2": "^0.26.0",
+    "semantic-release": "^17.0.4",
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/exec": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
     "tslib": "^1.11.0",
     "typescript": "^3.8.2"
   }
