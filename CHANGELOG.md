@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/kenift/exception/compare/v1.0.0...v1.1.0) (2020-05-01)
+
+
+### Features
+
+* **Exceptions:** adding capitalize to each word of module name ([2371594](https://github.com/kenift/exception/commit/2371594835f5745a82a2603f50c1560cd45c9df1))
+
 # 1.0.0 (2020-03-30)
 
 
