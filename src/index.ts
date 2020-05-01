@@ -7,11 +7,17 @@ import {
 
 function formatModuleName(string: string): string {
   string = string.toLowerCase();
-  let stringArray: Array<string> = string.split('');
+  let stringArray: Array<string> = string.split(' ');
 
-  stringArray[0] = stringArray[0].toUpperCase();
+  for (let index = 0; index < stringArray.length; index++) {
+    let elArray = stringArray[index].split('');
 
-  string = stringArray.join('');
+    elArray[0] = elArray[0].toUpperCase();
+
+    stringArray[index] = elArray.join('');
+  }
+
+  string = stringArray.join(' ');
 
   return string
 }
@@ -42,7 +48,3 @@ const Exception = new class Exception {
 export {
   Exception
 }
-
-
-
-
