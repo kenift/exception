@@ -26,7 +26,13 @@ const Exception = new class Exception {
   error (module: string, message: string) {
     let text = `${times.timestamp()} Kenift ${formatModuleName(module)} ${logSymbols.error} ${message}`;
 
+    let error = new Error(message);
+
+    error.stack = module;
+
     console.log(chalk.red(text));
+
+    throw error;
   }
   success (module: string, message: string) {
     let text = `${times.timestamp()} Kenift ${formatModuleName(module)} ${logSymbols.success} ${message}`;
