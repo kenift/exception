@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/kenift/exception/compare/v1.1.0...v1.2.0) (2020-05-16)
+
+
+### Features
+
+* **Error:** adding throwing error ([75eb053](https://github.com/kenift/exception/commit/75eb053af15ca9c86557ed043fa1fe14d91cd1f7))
+
 # [1.1.0](https://github.com/kenift/exception/compare/v1.0.0...v1.1.0) (2020-05-01)
 
 
