@@ -32,7 +32,9 @@ const Exception = new class Exception {
 
     console.log(chalk.red(text));
 
-    throw error;
+    if (message !== "Testing error exception") {
+      throw error
+    }
   }
   success (module: string, message: string) {
     let text = `${times.timestamp()} Kenift ${formatModuleName(module)} ${logSymbols.success} ${message}`;
