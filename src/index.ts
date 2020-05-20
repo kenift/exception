@@ -22,9 +22,17 @@ function formatModuleName(string: string): string {
   return string
 }
 
+type ExceptionResult = {
+  module: string,
+  timestamp: string,
+  message: string
+}
+
 const Exception = new class Exception {
-  error (module: string, message: string) {
-    let text = `${times.timestamp()} Kenift ${formatModuleName(module)} ${logSymbols.error} ${message}`;
+  error (module: string, message: string): ExceptionResult {
+    let timestamp = times.timestamp();
+
+    let text = `${timestamp} Kenift ${formatModuleName(module)} ${logSymbols.error} ${message}`;
 
     let error = new Error(message);
 
@@ -35,21 +43,51 @@ const Exception = new class Exception {
     if (message !== "Testing error exception") {
       throw error
     }
+
+    return {
+      module: formatModuleName(module),
+      timestamp: timestamp,
+      message: message
+    }
   }
-  success (module: string, message: string) {
-    let text = `${times.timestamp()} Kenift ${formatModuleName(module)} ${logSymbols.success} ${message}`;
+  success (module: string, message: string): ExceptionResult {
+    let timestamp = times.timestamp()
+
+    let text = `${timestamp} Kenift ${formatModuleName(module)} ${logSymbols.success} ${message}`;
 
     console.log(chalk.green(text));
+
+    return {
+      module: formatModuleName(module),
+      timestamp: timestamp,
+      message: message
+    }
   }
-  info (module: string, message: string) {
-    let text = `${times.timestamp()} Kenift ${formatModuleName(module)} ${logSymbols.info} ${message}`;
+  info (module: string, message: string): ExceptionResult {
+    let timestamp = times.timestamp()
+
+    let text = `${timestamp} Kenift ${formatModuleName(module)} ${logSymbols.info} ${message}`;
 
     console.log(chalk.cyan(text));
+
+    return {
+      module: formatModuleName(module),
+      timestamp: timestamp,
+      message: message
+    }
   }
-  warning (module: string, message: string) {
-    let text = `${times.timestamp()} Kenift ${formatModuleName(module)} ${logSymbols.warning} ${message}`;
+  warning (module: string, message: string): ExceptionResult {
+    let timestamp = times.timestamp()
+
+    let text = `${timestamp} Kenift ${formatModuleName(module)} ${logSymbols.warning} ${message}`;
 
     console.log(chalk.yellow(text));
+
+    return {
+      module: formatModuleName(module),
+      timestamp: timestamp,
+      message: message
+    }
   }
 };
 
