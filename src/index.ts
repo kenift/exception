@@ -22,14 +22,32 @@ function formatModuleName(string: string): string {
   return string
 }
 
-type ExceptionResult = {
+type KExceptionError = {
+  module: string,
+  timestamp: string,
+  message: string
+}
+
+type KExceptionInfo = {
+  module: string,
+  timestamp: string,
+  message: string
+}
+
+type KExceptionWarning = {
+  module: string,
+  timestamp: string,
+  message: string
+}
+
+type KExceptionSuccess = {
   module: string,
   timestamp: string,
   message: string
 }
 
 const Exception = new class Exception {
-  error (module: string, message: string): ExceptionResult {
+  error (module: string, message: string): KExceptionError {
     let timestamp = times.timestamp();
 
     let text = `${timestamp} Kenift ${formatModuleName(module)} ${logSymbols.error} ${message}`;
@@ -50,7 +68,7 @@ const Exception = new class Exception {
       message: message
     }
   }
-  success (module: string, message: string): ExceptionResult {
+  success (module: string, message: string): KExceptionSuccess {
     let timestamp = times.timestamp()
 
     let text = `${timestamp} Kenift ${formatModuleName(module)} ${logSymbols.success} ${message}`;
@@ -63,7 +81,7 @@ const Exception = new class Exception {
       message: message
     }
   }
-  info (module: string, message: string): ExceptionResult {
+  info (module: string, message: string): KExceptionInfo {
     let timestamp = times.timestamp()
 
     let text = `${timestamp} Kenift ${formatModuleName(module)} ${logSymbols.info} ${message}`;
@@ -76,7 +94,7 @@ const Exception = new class Exception {
       message: message
     }
   }
-  warning (module: string, message: string): ExceptionResult {
+  warning (module: string, message: string): KExceptionWarning {
     let timestamp = times.timestamp()
 
     let text = `${timestamp} Kenift ${formatModuleName(module)} ${logSymbols.warning} ${message}`;
@@ -92,6 +110,9 @@ const Exception = new class Exception {
 };
 
 export {
-  ExceptionResult,
+  KExceptionError,
+  KExceptionInfo,
+  KExceptionSuccess,
+  KExceptionWarning,
   Exception
 }
