@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/kenift/exception/compare/v1.2.0...v1.3.0) (2020-05-20)
+
+
+### Features
+
+* **Return:** exception returns data object now with fiels: module, timestamp, message ([ca16abb](https://github.com/kenift/exception/commit/ca16abba66d5335e4a26d5d4d8350118aeaf5ad1))
+
 # [1.2.0](https://github.com/kenift/exception/compare/v1.1.0...v1.2.0) (2020-05-16)
 
 
