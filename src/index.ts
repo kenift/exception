@@ -92,5 +92,6 @@ const Exception = new class Exception {
 };
 
 export {
+  ExceptionResult,
   Exception
 }
