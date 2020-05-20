@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/kenift/exception/compare/v1.4.0...v1.5.0) (2020-05-20)
+
+
+### Features
+
+* **types:** adding returns type for each exception ([817ea32](https://github.com/kenift/exception/commit/817ea320b0bdc3a78239b836a4ec2f9fbcfea135))
+
 # [1.4.0](https://github.com/kenift/exception/compare/v1.3.0...v1.4.0) (2020-05-20)
 
 
