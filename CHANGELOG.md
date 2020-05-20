@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/kenift/exception/compare/v1.3.0...v1.4.0) (2020-05-20)
+
+
+### Features
+
+* **Type:** adding type ExceptionResult ([646701b](https://github.com/kenift/exception/commit/646701b88a523e7140e129bfea30d0abc92d7225))
+
 # [1.3.0](https://github.com/kenift/exception/compare/v1.2.0...v1.3.0) (2020-05-20)
 
 
