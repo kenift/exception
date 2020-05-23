@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/kenift/exception/compare/v1.5.0...v1.6.0) (2020-05-23)
+
+
+### Features
+
+* **index.ts:** removing return for error method ([b5ac52e](https://github.com/kenift/exception/commit/b5ac52e8ffc22f3a5db16ae06643877483a1a34c))
+
 # [1.5.0](https://github.com/kenift/exception/compare/v1.4.0...v1.5.0) (2020-05-20)
 
 
