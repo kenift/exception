@@ -54,19 +54,13 @@ const Exception = new class Exception {
 
     let error = new Error(message);
 
-    error.stack = module;
+    error.name = formatModuleName(module);
+
+    error.stack = timestamp;
 
     console.log(chalk.red(text));
 
-    if (message !== "Testing error exception") {
-      throw error
-    }
-
-    return {
-      module: formatModuleName(module),
-      timestamp: timestamp,
-      message: message
-    }
+    throw error
   }
   success (module: string, message: string): KExceptionSuccess {
     let timestamp = times.timestamp()
